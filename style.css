@@ -1,0 +1,434 @@
+@font-face {
+    font-family: laus;
+    src: url(Lausanne-300.woff2);
+}
+@font-face {
+    font-family: cardi;
+    src: url(cardinalfruitweb-regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.circle{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+  mix-blend-mode: difference;
+    border-radius: 50%;
+   
+}
+
+*::selection{
+    background-color: #fff;
+    color: black;
+}
+
+.wrapper{
+    background: black;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+    transition: all ease 0.2s;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    width: 100%;
+    height: 100px;
+    font-family: laus;
+    position: fixed;
+}
+
+button{
+    height: 20px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+}
+
+button .c{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+.left h5{
+font-size: 15px;
+letter-spacing: 3px;
+}
+
+.left h6{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right h5{
+font-size: 15px;
+}
+
+.right i{
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+   align-items: center;
+    justify-content: center;
+    display: flex;
+border: 0.5px solid white;
+border-radius: 50%;
+}
+
+.page1{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+   
+    padding-top: 150px;
+    
+}
+.page1 h1{
+    font-size: 240px;
+    font-family: cardi;
+    line-height: 240px;
+    letter-spacing: 1vw;
+    font-weight: 900;
+    
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw;
+
+}
+.page2 .up{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.up h6{
+    font-size: 15px;
+    font-family: cardi;
+    letter-spacing: 1px;
+}
+.page2 img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.page2 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+object-position: center;
+}
+
+.page3 {
+    width: 100%;
+    min-height: 140vh;
+    padding: 2vw;
+}
+
+.page3 .a{
+    font-size: 8vw;
+    font-family: cardi;
+    letter-spacing: 15px;
+    margin-bottom: 10vh;
+}
+
+.page3 .b{
+    font-size: 4vw;
+    line-height: 9vw;
+    font-family: cardi;
+    letter-spacing: 15px;
+    margin-bottom: 13vh;
+}
+
+
+.page3 i{
+   
+    border: 1px solid white;
+border-radius: 50%;
+    font-size: 7vw;
+    padding: 30px;
+   transition: all ease 0.4s;
+   cursor: pointer;
+   
+
+}
+
+.page3 i:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.page4{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.page4 .left1{
+    height: 90%;
+width: 55%;
+
+object-fit: cover;
+object-position: center;
+}
+.page4 .left1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+object-position: center;
+}
+.page4 .right1{
+width: 100%;
+width: 40%;
+display: grid;
+}
+
+.page4 .right1 h5{
+    font-size: 2vw;
+margin-bottom: 5vh;
+font-family: cardi;
+letter-spacing: 2px;
+}
+
+.page4 .right1 .line{
+    height: 1px;
+    width: 35vw;
+    border: 1px solid white;
+}
+
+.page4 .right1 h1{
+    font-size: 5vw;
+    padding: 7vh 0;
+    line-height:5vw;
+font-family: cardi;
+letter-spacing: 5px;
+}
+
+.page4 .right1 p{
+    width: 35vw;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-family: laus;
+    margin-bottom: 6vh;
+}
+
+.page4 .right1 h6{
+    font-size: 1vw;
+    font-family: cardi;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    width: fit-content;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.page4 .right1 h6:hover{
+    border-bottom: 1px solid white;
+
+}
+.page5{
+    width: 100%;
+    min-height: 240vh;
+    padding: 20vh 2vw;
+position: relative;
+}
+
+.page5 .img1{
+
+    width: 30vw;
+    height: 80vh;
+    background-image: url(https://images.prismic.io/lironmoran/d0fb6276-5b55-475e-8c44-34a4890aac19_d76c7f1f-0bd2-4c76-8dcf-37327280728e_Peled-Studios---Flipkart_-115-HDR.jpg?auto=compress,format&rect=0,0,738,919&w=739&h=920);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 11%;
+    z-index: 5;
+}
+.page5 .img2{
+    width: 57vw;
+   min-height: 130vh;
+    background-image: url(https://images.prismic.io/lironmoran/b6ba21f1-10d1-418b-85e9-9093f882e08e_9d708129-7c2f-49cb-b890-ea1ae5f7cb51_Peled-Studios---Flipkart_-223-HDR.jpg?auto=compress,format&rect=0,0,1197,1490&w=1197&h=1490);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.page6{
+    width: 100%;
+    min-height: 150vh;
+    padding: 2vw;
+}
+.page6>h1{
+    font-family: cardi;
+    font-size: 3vw;
+    line-height: 3vw;
+    letter-spacing: 5px;
+    margin-bottom: 6vh;
+    
+}
+
+
+ .page6 .elem{
+    height: 30vh;
+    width: 100%;
+   border-bottom: 1px solid #dadada;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   position: relative;
+   word-spacing: 2vw;
+}
+
+.elem h1{
+    font-size: 4vw;
+    position: relative;
+    z-index: 55;
+    mix-blend-mode: difference;
+
+    font-family: cardi;
+}
+.elem img{
+    height: 30vh;
+    width: 30vw;
+   
+    object-position: center;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.page7{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2vw;
+    position: relative;
+}
+.page7 h6{
+    font-family: cardi;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-bottom: 2vw;
+}
+
+.page7 .swiper {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .swiper-slide {
+   
+    color: white;
+    
+  }
+  .swiper-slide h1{
+font-size: 3vw;
+padding: 4vw;
+font-family: laus;
+
+
+  }
+  .swiper-slide h6{
+padding: 4vw;
+  }
+
+  .swiper-button-next{
+    
+    color: white;
+    position: absolute;
+border: 1px solid white;
+padding: 2vw;
+border-radius: 50%;
+top: 90%;
+left: 91%;
+  }
+
+  .swiper-button-prev{
+    color: white;
+    position: absolute;
+border: 1px solid white;
+padding: 2vw;
+border-radius: 50%;
+top: 90%;
+left: 85%;
+  }
+
+  .page8{
+    width: 100%;
+    height: 80vh;
+    pad: 2vw;
+text-align: center;
+
+  }
+
+  .page8 h5{
+font-size: 2vw;
+font-family: cardi;
+letter-spacing: 2px;
+margin-bottom: 2vh;
+  }
+
+  .page8 h1{
+    font-size: 15vw;
+    font-family: cardi;
+    letter-spacing: 2px;
+    margin-bottom: 7vh;
+    line-height: 35vh;
+      }
+    .page8 p{
+        font-family: cardi;
+
+    }
+
+    .page8 .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #dadada;
+        width: 95%;
+        height: 20vh;
+        padding: 2vw;
+        margin-top: 4vh;
+        margin-left: 2vw;
+        
+    }
